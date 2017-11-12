@@ -1,0 +1,8 @@
+<p></p>
+<div class="row text-center text-lg-left">
+  <div *ngFor="let image of images | async" class="col-lg-3 col-md-4 col-xs-6">
+    <a [routerLink]="['/image', image.$key]" class="d-block mb-4 h-100">
+      <img src="{{image.url}}" class="img-fluid img-thumbnail" alt="">
+    </a>
+  </div>
+</div>

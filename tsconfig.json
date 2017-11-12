@@ -1,31 +1,19 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "isolatedModules": false,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": false,
-    "noImplicitAny": true,
-    "noImplicitUseStrict": false,
-    "strictNullChecks": true,
-    "noEmitHelpers": false,
-    "noLib": false,
-    "noUnusedLocals": true,
-    "outDir": "dist/",
-    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "lib": ["es6", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true
-  },
-  "exclude": [
-    "./.vscode",
-    "./.fusebox",
-    "./.ngc",
-    "./dist",
-    "./node_modules",
-    "./coverage"
-  ]
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  }
 }
