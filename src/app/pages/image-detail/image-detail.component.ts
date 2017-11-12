@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./image-detail.component.css']
 })
 export class ImageDetailComponent implements OnInit {
-  imageUrl = '';
+  imageUrl = ''; //String value ist the picked image
 
   constructor(private imageService: ImageService,
     private route: ActivatedRoute) { }

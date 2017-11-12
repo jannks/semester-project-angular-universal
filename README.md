@@ -7,7 +7,9 @@
 * run `npm run start` which will start `ng serve` on `http://localhost:4200`.
 
 ### Server-side rendering (Universal)
-**`npm run build:ssr`** 
+First: **`npm run build:ssr`** 
 
-**`npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
+Then: **`npm run serve:ssr`** 
+
+Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
 

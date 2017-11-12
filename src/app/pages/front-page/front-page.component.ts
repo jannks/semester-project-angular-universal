@@ -11,7 +11,7 @@ import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
   encapsulation: ViewEncapsulation.None
 })
 export class FrontPageComponent implements OnInit, OnChanges {
-  images: Observable<GalleryImage[]>;
+  images: Observable<GalleryImage[]>; //list of all Images
 
   constructor(private ImageServis: ImageService) { }
 

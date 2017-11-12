@@ -40,7 +40,7 @@ import { appRoutes } from '../routes';
     BrowserModule.withServerTransition({appId: 'my-app'}),
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase), //Initialize Firebase 
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
