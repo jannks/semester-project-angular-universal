@@ -20,7 +20,8 @@ export class ImageService {
     });
   }
 
-  getImages(): Observable<GalleryImage[]> {
+  getImages(): Observable<GalleryImage[]> { // return a map with GalleryImage objects: map key = Image key 
+                                            // value = object
     return this.db.list('uploads').snapshotChanges().map(actions => {
       return actions.map(action => {
         const $key = action.payload.key;
@@ -30,7 +31,7 @@ export class ImageService {
     });
   }
 
-  getUserImages(): Observable<GalleryImage[]> {
+  getUserImages(): Observable<GalleryImage[]> { // testing
     var itemsRef: AngularFireList<any>;
     itemsRef = this.db.list('uploads');
 
@@ -44,7 +45,7 @@ export class ImageService {
     });
   }
 
-  getImage(key: string) {
+  getImage(key: string) { // return single image for image-detail
     return firebase.database().ref('uploads/' + key).once('value')
     .then((snap) => snap.val());
   }

@@ -15,14 +15,14 @@ export class AuthenticationGuardService implements CanActivate {
     this.user = afAuth.authState;
   }
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    return this.user.map((auth) => {
-      if (!auth) {
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) { 
+    return this.user.map((auth) => { // catch authentication status from Firebase (boolean)
+      if (!auth) { // if false: back to login
         this.router.navigateByUrl('/login');
         return false;
       }
       return true;
-    }).take(1);
+    }).take(1); 
   }
 
 }

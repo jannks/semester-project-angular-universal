@@ -12,9 +12,9 @@ import * as  firebase from 'firebase';
 @Injectable()
 export class UploadService {
 
-  private basePath = '/uploads';
-  private uploads: AngularFireList<GalleryImage[]>;
-  private user: string;
+  private basePath = '/uploads'; // upload path on Firebase
+  private uploads: AngularFireList<GalleryImage[]>; // list with images for upload
+  private user: string; // user id
 
   constructor(private ngFire: AngularFireModule, private db: AngularFireDatabase, private authService: AuthenticationService) {
     this.user = authService.getUser();
@@ -46,7 +46,7 @@ export class UploadService {
         this.saveFileData(upload);
       }
     );
-  }
+  } // final save on Firebase
   private saveFileData(upload: Upload) {
     this.db.list(`${this.basePath}/`).push(upload);
     console.log('File saved!: ' + upload.url);
