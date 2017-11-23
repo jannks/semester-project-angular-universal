@@ -10,8 +10,4 @@ export class Upload {
     constructor(file: File) {
         this.file = file;
     }
-
-    getUid() {
-        return this.uid;
-    }
 }

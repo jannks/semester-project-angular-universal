@@ -22,13 +22,12 @@ export class UserGalleryComponent implements OnInit, OnChanges {
     this.images = this.ImageServis.getUserImages();
 
     this.images.subscribe(val => {
-      console.log(val);
+
       id = val;
     }
     );
-    var test: GalleryImage = id.Fir;
-    console.log(test);
-    
+
+    console.log(id);
     
   }
 
