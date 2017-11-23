@@ -25,6 +25,8 @@ import { UploadService } from './services/upload.service';
 
 import { appRoutes } from '../routes';
 
+import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor';
+
 
 @NgModule({
   declarations: [
