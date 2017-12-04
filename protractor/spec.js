@@ -1,23 +1,23 @@
 // spec.js
 
 
-  var ProtractorPerf = require('protractor-perf');
+ // var ProtractorPerf = require('protractor-perf');
   describe('HFU Angular Project', function() {
-      var perf = new ProtractorPerf(protractor); // Initialize the perf runner
+ //     var perf = new ProtractorPerf(protractor); // Initialize the perf runner
       it('should open front page', function() {
           browser.get('http://localhost:4200');
   
-          perf.start(); // Start measuring the metrics
+ //         perf.start(); // Start measuring the metrics
          
           //Functional tests
 
-          perf.stop(); // Stop measuring the metrics 
+ //         perf.stop(); // Stop measuring the metrics 
   
-          if (perf.isEnabled) { // Is perf measuring enabled ?
+ /*         if (perf.isEnabled) { // Is perf measuring enabled ?
               // Check for perf regressions, just like you check for functional regressions
               expect(perf.getStats('meanFrameTime')).toBeLessThan(60); 
           };
-  
+*/  
          // var todoList = element.all(by.repeater('todo in todos'));
          // expect(todoList.count()).toEqual(3);
       });
