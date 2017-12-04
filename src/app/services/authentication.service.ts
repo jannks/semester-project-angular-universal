@@ -28,4 +28,8 @@ export class AuthenticationService {
   getUser() { // user id for iamges (still testing)
     return this.afAuth.auth.currentUser.uid;
   }
+
+  getEmail() {
+    return this.afAuth.auth.currentUser.email;
+  }
 }
