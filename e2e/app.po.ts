@@ -4,7 +4,7 @@ import {} from 'jasmine';
 export class NgHomePage {
   navigateTo() {
     // Navigate to the home page of the app
-    return browser.get('');
+    return browser.get('localhost:4200');
   }
 
   getHeadingText() {

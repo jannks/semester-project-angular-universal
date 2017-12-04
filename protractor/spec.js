@@ -2,9 +2,9 @@
 
 
   var ProtractorPerf = require('protractor-perf');
-  describe('site todo list', function() {
+  describe('HFU Angular Project', function() {
       var perf = new ProtractorPerf(protractor); // Initialize the perf runner
-      it('should add a todo', function() {
+      it('should open front page', function() {
           browser.get('http://localhost:4200');
   
           perf.start(); // Start measuring the metrics

@@ -10,6 +10,6 @@ describe('ng-HomePage App', function() {
 
   it('should display heading saying HFU Angular Projekt', () => {
     page.navigateTo();
-    expect<any>(page.getHeadingText()).toEqual('HFU Angular Projekt');
+    expect<any>(page.getHeadingText()).toEqual('HFU Angular Project');
   });
 });
