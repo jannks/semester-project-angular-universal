@@ -21,7 +21,7 @@
          // var todoList = element.all(by.repeater('todo in todos'));
          // expect(todoList.count()).toEqual(3);
       });
-      debugger;
+      browser.debugger();
   });
   
 /*
