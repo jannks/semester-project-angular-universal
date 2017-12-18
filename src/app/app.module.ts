@@ -18,6 +18,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { UploadComponent } from './pages/upload/upload.component';
 import { UserGalleryComponent } from './pages/user-gallery/user-gallery.component';
 import { CommentComponent } from './pages/image-detail/comment.component';
+import { FeedComponent } from './pages/image-detail/feed.component';
+import { MessageComponent } from './pages/image-detail/message.component';
 
 
 import { AuthenticationGuardService } from './services/authentication-guard.service';
@@ -40,7 +42,9 @@ import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor';
     LoginComponent,
     UploadComponent,
     UserGalleryComponent,
-    CommentComponent
+    CommentComponent,
+    FeedComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
@@ -54,7 +58,8 @@ import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor';
     AuthenticationGuardService,
     AuthenticationService,
     ImageService,
-    UploadService
+    UploadService,
+    CommentService
   ],
   bootstrap: [AppComponent]
 })

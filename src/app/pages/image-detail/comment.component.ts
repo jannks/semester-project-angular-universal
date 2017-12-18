@@ -20,7 +20,7 @@ export class CommentComponent implements OnInit {
         this.comment.sendMessage(this.message);
     }
 
-    handSubmit(event) {
+    handleSubmit(event) {
         if (event.keyCode == 13) {
             this.send();
         }
