@@ -13,3 +13,12 @@ Then: **`npm run serve:ssr`**
 
 Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
 
+### Testing - Start Selenium Server
+First: **`webdriver-manager update`**
+Then: **`webdriver-manager start`**
+Sets Selenium Server up on `localhost:4444/wd/hub` - needs seperate console. 
+
+### Testing Start Protractor
+First: Change diretory to `\semester-project-angular-universal\protractor`
+Then: **`protractor conf.js`**
+Runs protractor test - needs seperate console.
