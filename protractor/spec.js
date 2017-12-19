@@ -2,19 +2,21 @@
 
 
  // var ProtractorPerf = require('protractor-perf');
-  describe('HFU Angular Project', function() {
- //     var perf = new ProtractorPerf(protractor); // Initialize the perf runner
+ // describe('HFU Angular Project', function() {
+ 
+    browser.ignoreSynchronization = true;
       it('should open front page', function() {
-          browser.get('http://localhost:4000');
-          
+          browser.get('http://localhost:4200');
          
       });
+
       it('should open login page', function(){
-      //  browser.get('http://localhost:4000/login');
-        var elem = $('loginID');
-        elem.click();
-        
+        //browser.get('http://localhost:4200/login');
+        element(by.linkText('Log In')).click();
+        // element.all(by.css('.nav .navbar-nav .ml-auto')).get(0).click();
+        browser.pause();
       });
+
       it('should perform the login', function(){
       element(by.model('email')).sendKeys('nathalie.giessler@hs-furtwangen.de');
       element(by.model('password')).sendKeys('12345');
@@ -22,7 +24,7 @@
       });
 
       
-  });
+//  });
   
 /*
   var PerfRunner = require('..');

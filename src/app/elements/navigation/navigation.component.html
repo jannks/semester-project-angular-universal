@@ -14,7 +14,7 @@
     </ul>
     <ul class="nav navbar-nav ml-auto">
       <li *ngIf="!(user|async)?.uid" class="nav-link badge badge-success">
-        <a routerLink="/login" class="nav-link">Log In</a>
+        <a id="loginID" routerLink="/login" class="nav-link">Log In</a>
       </li>
       <li class="nav-item" *ngIf="(user|async)?.uid">
         <a href="#" (click)="logOut()" class="badge badge-danger">Log Out</a>
