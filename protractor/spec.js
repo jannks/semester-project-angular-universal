@@ -5,23 +5,23 @@
   describe('HFU Angular Project', function() {
  //     var perf = new ProtractorPerf(protractor); // Initialize the perf runner
       it('should open front page', function() {
-          browser.get('http://localhost:4200');
-  
- //         perf.start(); // Start measuring the metrics
+          browser.get('http://localhost:4000');
+          
          
-          //Functional tests
-
- //         perf.stop(); // Stop measuring the metrics 
-  
- /*         if (perf.isEnabled) { // Is perf measuring enabled ?
-              // Check for perf regressions, just like you check for functional regressions
-              expect(perf.getStats('meanFrameTime')).toBeLessThan(60); 
-          };
-*/  
-         // var todoList = element.all(by.repeater('todo in todos'));
-         // expect(todoList.count()).toEqual(3);
       });
-      browser.debugger();
+      it('should open login page', function(){
+        //http://localhost:4000/login
+        var elem = $('nav-link');
+        elem.click();
+        browser.pause();
+        
+      });
+      it('should perform the login', function(){
+      element(by.model('email')).sendKeys('nathalie.giessler@hs-furtwangen.de');
+      element(by.model('password')).sendKeys('12345');
+      })
+
+      
   });
   
 /*
