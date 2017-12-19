@@ -8,11 +8,11 @@
       <div class="card-text">
           <form #loginForm="ngForm">
               <div class="form-group">
-                <input type="email" class="form-control" #emailControl="ngModel" placeholder="Enter email" 
+                <input type="email" class="form-control" #emailControl="ngModel" ng-model="email" placeholder="Enter email" 
                 [(ngModel)]="email" name="email" maxlength="70" email required>
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" #passwordControl="ngModel" placeholder="Enter password" 
+                <input type="password" class="form-control" #passwordControl="ngModel" ng-model="password" placeholder="Enter password" 
                 [(ngModel)]="password" name="password" maxlength="70">
               </div>
               <button type="submit" class="btn btn-primary" 

@@ -10,16 +10,16 @@
          
       });
       it('should open login page', function(){
-        //http://localhost:4000/login
-        var elem = $('nav-link');
+      //  browser.get('http://localhost:4000/login');
+        var elem = $('loginID');
         elem.click();
-        browser.pause();
         
       });
       it('should perform the login', function(){
       element(by.model('email')).sendKeys('nathalie.giessler@hs-furtwangen.de');
       element(by.model('password')).sendKeys('12345');
-      })
+      browser.pause();
+      });
 
       
   });
