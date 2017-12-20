@@ -23,6 +23,16 @@
       browser.pause();
       });
 
+      it('should open upload page', function(){
+        element(by.linkText('Upload')).click();
+      });
+
+      //Path noch anpassen müsste dann so gehen (nur mit chrome!)
+      it('should upload a file', function() {
+        element(by.css('input[type="file"]')).sendKeys('../some/path/foo.txt');    
+        element(by.id('uploadButton')).click();
+      });
+      
       
 //  });
   
