@@ -9,7 +9,7 @@
         element(by.linkText('Log In')).click();
       });
       
-      it('should perform the login and open upload page', function(){
+      it('should perform the login and open start page', function(){
         element(by.id('emailInput')).sendKeys('nathalie.giessler@hs-furtwangen.de');
         element(by.id('passwordInput')).sendKeys('123456');
         element(by.css('button[type="submit"]')).click();
