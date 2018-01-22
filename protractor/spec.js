@@ -27,3 +27,17 @@
         element(by.css('input[type="file"]')).sendKeys('C:/Users/Nathalie/Documents/GitHub/semester-project-angular-universal/Katzi.jpg');    
         element(by.id('uploadButton')).click();
       });
+
+      it('should click on first picture', function(){
+        element(by.xpath("/html/body/app-root/div/app-front-page/div[1]/div/a/img")).click();
+      })
+      
+      it('should insert a comment an click send button', function(){
+        element(by.cssSelector("input[id='chatInputId']")).sendKeys("automatic comment");
+        element(by.id("commentButtonId")).click();
+      })
+      
+      it('should click logout button', function(){
+        element(by.linkText("Log Out")).click();
+      })
+      
