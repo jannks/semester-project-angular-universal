@@ -33,7 +33,7 @@
       })
       
       it('should insert a comment an click send button', function(){
-        element(by.cssSelector("input[id='chatInputId']")).sendKeys("automatic comment");
+        element(by.css("input[id='chatInputId']")).sendKeys("automatic comment");
         element(by.id("commentButtonId")).click();
       })
       
