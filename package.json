@@ -25,7 +25,8 @@
     "generate:prerender": "cd dist && node prerender",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "node dist/server"
+    "serve:ssr": "node dist/server",
+    "test": "mocha"
   },
   "private": true,
   "dependencies": {
@@ -42,8 +43,11 @@
     "@nguniversal/express-engine": "^5.0.0-beta.5",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "angularfire2": "^5.0.0-rc.3",
-    "firebase": "^4.6.2",
     "core-js": "^2.4.1",
+    "firebase": "^4.6.2",
+    "path": "^0.12.7",
+    "protractor": "^5.2.0",
+    "protractor-perf": "^0.2.3",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -51,10 +55,17 @@
     "@angular/cli": "^1.5.0",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
+    "@types/jasmine": "^2.8.2",
     "@types/node": "^8.0.30",
     "cpy-cli": "^1.0.1",
     "express": "^4.15.2",
     "http-server": "^0.10.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-webpack": "^2.0.9",
+    "mocha": "^4.1.0",
     "reflect-metadata": "^0.1.10",
     "ts-loader": "^2.3.7",
     "typescript": "~2.4.2"

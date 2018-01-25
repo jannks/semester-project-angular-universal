@@ -14,14 +14,22 @@ export class AuthenticationService {
   }
 
   login(user: User) {
-    return this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+    return this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password); //sign in Firebase with user object
   }
 
   logout() {
-    return this.afAuth.auth.signOut();
+    return this.afAuth.auth.signOut(); // sign out Firebase (Firebase function)
   }
 
-  authUser() {
+  authUser() { 
     return this.user;
+  }
+
+  getUser() { // user id for iamges (still testing)
+    return this.afAuth.auth.currentUser.uid;
+  }
+
+  getEmail() {
+    return this.afAuth.auth.currentUser.email;
   }
 }
