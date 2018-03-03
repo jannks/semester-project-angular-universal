@@ -1,6 +1,9 @@
 <p><h1>Angular Universal Semester Project</h1></p>
-### Installation
 
+### Project Documentation
+https://github.com/jannks/semester-project-angular-universal/blob/master/Semesterprojekt_final.pdf
+
+### Installation
 * `npm install` 
 
 ### Client-side only rendering (Angular)
